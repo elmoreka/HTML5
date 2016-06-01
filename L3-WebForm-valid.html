@@ -3,91 +3,89 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-		<title>Contact Us</title>
+		<title>Employee Cost</title>
 	</head>
 <body>
 	<div id="contact form">
 	
-	<form id = "contact" method="Post" action="">
 	<fieldset>
 	
 	<p>
 	<label for="custname">Name</label>
-	<input type="text" name="custname" required placeholder="First and Last Name" />
+	<input type="text" id="custname" placeholder="First and Last Name" />
 	</p>
 	
 	<p>
 	<label for="address">Address</label>
-	<input type="text" name="address" required placeholder="Enter your street address" />
+	<input type="text" id="address" placeholder="Enter your street address" />
 	</p>
 	
 	<p>
 	<label for="city">City</label>
-	<input type="text" name="city" required placeholder="City" />
+	<input type="text" id="city" placeholder="City" />
 	
 	<label for="state">State</label>
-	<input type="text" name="state" required placeholder="State" />
+	<input type="text" id="state" placeholder="State" />
 	
 	<label for="zip">Zip Code</label>
-	<input type="text" name="zip" pattern="[0-9]{5}" required placeholder="Zip Code" />
+	<input type="text" id="zip" pattern="[0-9]{5}" placeholder="Zip Code" />
 	</p>
 	
 	<p>
 	<label for="email">Email</label>
-	<input type="email" name="email" required placeholder="Email Address" />
+	<input type="email" id="email" placeholder="Email Address" />
 	</p>
 	
 	<p>
 	<label for="phone">Phone</label>
-	<input type="text" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required
+	<input type="text" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
 		placeholder="Phone Number"/>
 	</p>
 	
 	<p>
 	<label for="position">Position</label>
-	<input type="text" name="position" required placeholder="Position applied for" />
+	<input type="text" id="position" placeholder="Position applied for" />
 	</p>
 	
 	<p>
 	<label for="sDate">Start date</label>
-	<input type="date" name="sDate" required placeholder="Start date" />
+	<input type="date" id="sDate" required placeholder="Start date" />
 	</p>
 
 	<p>
 	<label for="cDate">Completion date</label>
-	<input type="date" name="cDate" required placeholder="Completion date" />
+	<input type="date" id="cDate" required placeholder="Completion date" />
 	</p>
 	
 	<p>
 	<label for="rate">Pay rate</label>
-	<input type="number" name="rate" required placeholder="Pay rate" />
+	<input type="number" id="rate" required placeholder="Pay rate" />
 	</p>
 	
 	<p>
 	<label for="hours">Weekly Hours</label>
-	<input type="number" name="hours" required placeholder="Weekly Hours" />
+	<input type="number" id="hours" required placeholder="Weekly Hours" />
 	</p>
 	
 	<p>
 	<label for="tHours">Total Hours</label>
-	<input type="number" name="tHours" />
+	<input type="number" id="tHours" />
 	</p>
 
 	<p>
 	<label for="compensation">Total Compensation</label>
-	<input type="number" name="compensation"  />
+	<input type="number" id="compensation"  />
 	</p>
 	
 	<label for="message">Questions or Comments</label>
-	<textarea name="message" placeholder="Any Questions or Comments"></textarea>
+	<textarea id="message" placeholder="Any Questions or Comments"></textarea>
 	
-	<input type="submit" name="submit" id="submit" value="Submit" />
+	<button class="button" id="submit">Submit</button>
 	
 	</fieldset>
-	</form>
 	
 	</div><!-- End of contact-form -->
-	<script src="calculateHireCost.js"></script>;
+	<script src="calculateHireCost.js">
+	</script>;
 </body>
 </html>
