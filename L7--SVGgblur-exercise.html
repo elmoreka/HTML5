@@ -1,0 +1,24 @@
+<!doctype html>
+<!-- This is the content of L7-SVGgblur-exercise.html. -->
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>SVG Offset and Gaussian Blur Example</title>
+		<style type="text/css">
+		</style>
+	</head>	
+	<body>
+	<h2>SVGgblur</h2>
+	<svg>
+		<defs>
+			<filter id="i1" x="0" y="0">
+			<feOffset dx="5" dy="5" dy="5" />
+			<feGaussianBlur stdDeviation="5" />
+			</filter>
+		</defs>
+		<rect width="150" height="150" fill="grey"
+		filter="url(#i1)" />
+		<rect width="150" height="150" fill="springgreen"/>
+	</svg>
+	</body>
+	</html>

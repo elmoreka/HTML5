@@ -1,0 +1,63 @@
+<!doctype html>
+<!-- This is the content of L6-regions-exercise.html. -->
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>CSS Regions Example</title>
+		<style type="text/css">
+			body, html { height:100%; width:100%; } 
+			body{ 
+				color: black;
+				font-family: serif;
+				font-size: large;
+			}
+			#source{
+				-webkit-flow-into: main;
+				-moz-flow-into: main;
+			}
+			.region{
+				-webkit-flow-from: main;
+				-moz-flow-from: main;
+				margin: 0 25px 0 0;
+				background: #EEE8AA;
+				padding: 20px;
+			}
+			:region{
+				region-overflow:auto;
+				overflow:invisible;
+			}
+			#region1{
+				width: 20%;
+				height: 50%
+				float: left;
+			}
+			#region2{
+				width: 20%;
+				height: 50%
+				float: left;
+			}
+			#workarea{
+				position: relative;
+				padding: 25px;
+			}
+		</style>
+	</head>
+	
+	<body>
+	
+	<div id="source">
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer pretium dui sit amet felis. 
+		Integer sit amet diam. Phasellus ultricesviverra velit. Lorem ipsum dolor sit amet, consectetuer 
+		adipiscing elit. Integer pretium dui sit amet felis. Integer sit amet diam. Phasellus ultricesviverra 
+		velit. Lorem ipsum dolor sit amet, <b>consectetuer adipiscing elit</b>. Integer pretium dui sit amet felis. 
+		Integer sit amet diam. Phasellus ultricesviverra velit. Lorem ipsum dolor sit amet, consectetuer adipiscing 
+		elit. Integer pretium dui sit amet felis. Integer sit amet diam. Phasellus ultricesviverra velit. Lorem 
+		ipsum dolor sit amet, consectetuer adipiscing elit. Integer pretium dui sit amet felis. Integer sit amet 
+		diam. Phasellus ultricesviverra velit.</p>
+	</div>
+	<div id="workarea">
+		<div id="region1" class="region"></div>
+		<div id="region2" class="region"></div>
+	</div>
+	</body>
+	</html>

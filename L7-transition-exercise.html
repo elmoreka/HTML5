@@ -1,0 +1,75 @@
+<!doctype html>
+<!-- This is the content of L7-transition-exercise.html. -->
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Transition and Opacity Example</title>
+		<style type="text/css">
+			wrapper {
+				background: dodgerblue;
+				padding: 40px 40px;
+				width: 200px;
+				font-family: sans-serif;
+				font-size: xx-large;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 100px;
+				color: #fff;
+				
+				transform: translate(200px, 100px) skew(45deg);
+				-ms-transform: translate(200px, 100px) skew(45deg);
+				-moz-transform: translate(200px, 100px) skew(45deg);
+				-o-transform: translate(200px, 100px) skew(45deg);
+				-webkit-transform: translate(200px, 100px) skew(45deg);
+			}
+		#wrapper #front, #wrapper:hover #back{	
+			opacity: 1;
+			-ms-opacity: 1;
+			-moz-opacity: 1;
+			-o-opacity: 1;
+			-webkit-opacity: 1;
+			
+			transition-property: opacity;
+			-ms-transition-property: opacity;
+			-moz-transition-property: opacity;
+			-o-transition-property: opacity;
+			-webkit-transition-property: opacity;
+			
+			transition-duration: 1s;
+			-ms-transition-duration: 1s;
+			-moz-transition-duration: 1s;
+			-o-transition-duration: 1s;
+			-webkit-transition-duration: 1s;
+			
+			transition-delay: 1s;
+			-ms-transition-delay: 1s;
+			-moz-transition-delay: 1s;
+			-o-transition-delay: 1s;
+			-webkit-transition-delay: 1s;
+			
+			transition-timing-function: linear;
+			-ms-transition-timing-function: linear;
+			-moz-transition-timing-function: linear;
+			-o-transition-timing-function: linear;
+			-webkit-transition-timing-function: linear;
+		}
+		
+		#wrapper:hover #front, #wrapper #back{	
+			opacity: 0;
+			-ms-opacity: 0;
+			-moz-opacity: 0;
+			-o-opacity: 0;
+			-webkit-opacity: 0;
+			}
+			
+		</style>
+	</head>	
+	
+	<body>
+		<h2>transition</h2>
+		<div id="wrapper">
+		<div id="front">Knock Knock</div>
+		<div id="back">Who's there</div>
+		</div>
+	</body>
+	</html>
